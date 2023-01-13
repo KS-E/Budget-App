@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Comforter+Brush&family=Dancing+Script&family=Fuzzy+Bubbles&family=Karla:ital,wght@1,300&family=PT+Sans&family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Poppins:wght@200&family=Redressed&family=Roboto+Condensed:wght@300&family=Roboto:wght@400;500&family=Source+Sans+3:wght@500&family=Spline+Sans&family=Vujahday+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Budget App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="budget-container">
+          <h2>Budget</h2>
+          <input
+            type="number"
+            placeholder="Enter Total Amount"
+            class="budget-amount"
+            id="budget-amount"
+            min="50"
+          />
+          <button id="budget-button" class="button budget-button">
+            Set Budget
+          </button>
+          <p
+            class="budget-error hide"
+            id="budget-error-display"
+            style="color: red; font-weight: bold"
+          >
+            Budget can't be negative or empty. Try again!
+          </p>
+        </div>
+        <div class="expense-container">
+          <h2>Expenses</h2>
+          <input
+            type="text"
+            placeholder="Enter Title of Product"
+            class="product-title input-data"
+            id="product-title"
+          />
+          <input
+            type="number"
+            placeholder="Enter Cost of Product"
+            class="product-cost input-data"
+            id="product-cost"
+            min="1"
+          />
+          <button id="product-button" class="button product-button">
+            Add Item
+          </button>
+          <p
+            class="product-error hide"
+            id="product-error-display"
+            style="color: red; font-weight: bold"
+          >
+            Input improper. Check and try again!
+          </p>
+        </div>
+      </div>
+      <span class="display" id="display">
+        <h3 id="total-budget-display">Total Budget</h3>
+        <h3 id="total-expense-display">Expenses</h3>
+        <h3 id="balance-remaining">Balance Remaining</h3>
+      </span>
+      <div class="list-container" id="list-container">
+        <h1 class="heading">Expense List</h1>
+        <div class="list" id="list"></div>
+      </div>
+      <div class="alert hide">
+        <span class="closebtn">X</span>
+        <div id="message">
+          You have exceeded the set Budget! You can try increasing your budget.
+        </div>
+      </div>
+    </div>
+    <script src="./Js/script.js"></script>
+  </body>
+</html>

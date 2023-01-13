@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(180deg, #fff, #b7bec9);   
+    background-attachment: fixed;
+}
+
+
+input{
+    border: 2px solid #cacccf;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* whole page */
+.container{   
+    margin: 2em auto auto auto;
+    display: flex;
+    flex-direction: column;
+    min-width:max-content;
+    border-radius: 10px;
+}
+
+/* budget and product box */
+.wrapper > h2 {
+    margin-bottom: 0.8em;
+}
+
+.button {
+    background-color: rgb(120, 121, 216);
+    color: #fff;
+    width: fit-content;
+    padding: 0.8em;
+    border-radius: 5px;
+    margin-top: 2em;
+}
+
+/* budget and pdt box */
+.wrapper {
+    padding: 2em;
+    display: flex;
+    width: 100%;
+    align-content:space-around;
+    border-radius: 10px;
+    justify-content:space-evenly; 
+    text-align: center;
+}
+
+/* Budget Container */
+.budget-container{
+    background-color: #fff;
+    /* width: 45vmin; */
+    width: min-content;
+    min-height: 45%;
+    padding: 2em;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: #838a96 2px 2px 2px;
+}
+
+/* Expense Container */
+.expense-container{
+    background-color: #fff;
+    /* width: 45vmin; */
+    width: min-content;
+    height: 45%;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: #838a96 2px 2px 2px;
+}
+
+/* Diplay nav bar */
+.display{
+    background-color: rgb(116, 116, 197);
+    padding: 1em;
+    display: flex;
+    color: #fff;
+    min-height:min-content;
+    justify-content: space-around;
+    border-radius: 0.8em;
+    margin: 2em 10% 2em 10% ;
+}
+
+/* Expense List includes heading*/
+.list-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    font-size: 2em;
+    width: 60%;
+    padding: 0.5em;
+    min-height: fit-content;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+    box-shadow: #838a96 2px 2px 2px;
+}
+
+.list-container > h1 {
+    display: flex;
+    align-content: stretch;
+    height: fit-content;
+    font-size: 22px;
+    /* border: red solid 2px; */
+    margin: auto;
+    width: fit-content;
+    padding: 2%;
+}
+
+.heading {
+    text-align: center;
+}
+/* styling of list container containing items*/
+.list {
+  display: grid;
+  font-size: 44px;
+  font-weight: lighter;
+    /* border: red solid 2px; */
+  justify-content:center;
+  margin: auto;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 5px;
+}
+
+/* styling of list individual item */
+.item {
+display: grid;
+background-color: #fff;
+grid-template-columns: repeat(4, 1fr);
+padding: 2px;
+width: 100%;
+height: 45px;
+}
+
+/* stying of span when adding expense value on display */
+#expense-value {
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.alert {
+    background-color:rgba(255,255,255,0.8);
+    color: #535963;
+    z-index: 2;
+    width: 50vw;
+    height: 17vh;
+    border-radius: 20px;
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    font-size: 1.5 em;
+    text-align: center;
+    font-weight: bolder;
+    border: solid 2px rgba(0, 0, 0, 0.397);
+    margin-top: auto;
+}
+
+/* styling of alert sentence */
+#message{
+   text-align: center;
+   padding: 32px;
+}
+
+/* styling of cross */
+.closebtn {
+   color:#535963;
+   float: right;
+   margin-top: 4px;
+   margin-right: 15px;
+   font-weight: bold;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.fa-solid {
+    /* background-color: #4871b8; */
+    /* color: #fff; */
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: 40%;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+}
+/* 
+.edit {
+    /* margin: 2px; */
+/* } */
+
+/* .trash{
+    /* margin: 2px; */
+    /* border: red solid 2px; */
+    /* color:red; */
+    /* padding: 4px; */
+    /* height: 70px; */
+/* } */
